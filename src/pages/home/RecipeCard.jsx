@@ -1,8 +1,31 @@
-import {MainContainer} from "./HomeStyles"
+import { useNavigate } from "react-router-dom"
+
+import {Cards, MainContainer, RecipeButton, RecipeHeader, RecipeImage} from "./HomeStyles"
 
 const RecipeCard = ({recipes}) => {
+  const navigate=useNavigate()
   return(
 <MainContainer>
+{recipes.map((recipe)=>(
+
+  <Cards key={recipe.idMeal}>
+    <RecipeHeader>{recipe.strMeal} </RecipeHeader>
+      <RecipeImage src={recipe.strMealThumb}/>
+   <RecipeButton type="submit"
+   onClick={()=>Navigate("/details", {state:{recipe}})}>Details</RecipeButton>
+   
+   
+  </Cards>
+)
+
+
+
+
+)}
+
+
+
+
 
 </MainContainer>
   )
