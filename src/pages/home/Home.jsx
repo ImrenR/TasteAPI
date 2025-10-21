@@ -5,9 +5,9 @@ const Home = () => {
 <MainContainer>
 
 <Cards>
-<RecipeHeader></RecipeHeader>
+<RecipeHeader>Food App</RecipeHeader>
 <RecipeImage src=""/>
-<RecipeButton>Details</RecipeButton>
+<RecipeButton>Search</RecipeButton>
 
 </Cards>
 

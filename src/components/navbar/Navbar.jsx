@@ -4,14 +4,6 @@ const Navbar = () => {
   return (
     <Nav>
 
-<Menu>
-<MenuLink>
-  <Logo></Logo>
-</MenuLink>
-<Hamburger></Hamburger>
-
-
-</Menu>
 
 
 

@@ -88,18 +88,10 @@ export const MenuLink = styled(Link)`
 `;
 
 export const Logo = styled(MenuLink)`
-  background-color: gray;
-
+ 
   padding: 1rem 0;
-  color: #393e46;
   /* text-decoration: none; */
   font-weight: 800;
-
-  span {
-    font-weight: 400;
-
-    color: #00adb5;
-  }
 `;
 
 export const Hamburger = styled.div`
