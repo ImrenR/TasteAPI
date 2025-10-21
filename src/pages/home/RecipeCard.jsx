@@ -1,8 +1,10 @@
-const RecipeCard = () => {
-  return(
+import {MainContainer} from "./HomeStyles"
 
-    <>
-    </>
+const RecipeCard = ({recipes}) => {
+  return(
+<MainContainer>
+
+</MainContainer>
   )
 }
 
