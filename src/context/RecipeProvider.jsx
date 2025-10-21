@@ -6,8 +6,8 @@ export const RecipeContext=createContext();
 const RecipeProvider = ({children}) => {
 
 
-const [username, setUsername] = useState(localStorage.setItem("kullaniciAdi", username) || "")
-const [password, setPassword] = useState(localStorage.setItem("password", password) || "")
+const [username, setUsername] = useState()
+const [password, setPassword] = useState()
 
 
   return (
