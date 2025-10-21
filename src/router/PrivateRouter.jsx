@@ -1,8 +1,11 @@
+import { useContext } from "react"
+import { Outlet } from "react-router-dom"
+import { RecipeContext } from "../context/RecipeProvider"
+
 const PrivateRouter = () => {
-  return (
-    <>
-    </>
-  )
+
+  const{username,password}=useContext(RecipeContext)
+  return (username === "imren" && password==="1234" ? <Outlet/> : <Navigate to="/"/>)
 }
 
 export default PrivateRouter
