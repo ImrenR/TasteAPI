@@ -1,21 +1,30 @@
-import { FormContainer, Header, LoginContainer, StyledButton, StyledForm, StyledImg, StyledInput } from "./LoginStyles"
-import meal from "../../assets/meal.svg"
-
+import {
+  FormContainer,
+  Header,
+  LoginContainer,
+  StyledButton,
+  StyledForm,
+  StyledImg,
+  StyledInput,
+} from "./LoginStyles";
+import meal from "../../assets/meal.svg";
 
 const Login = () => {
-  return(
-
+  return (
     <LoginContainer>
       <FormContainer>
-        <StyledImg src={meal}/>
-        <Header></Header>
-              </FormContainer>
+        <StyledImg src={meal} />
+        <Header>{"<My/>"} Recipe</Header>
+      
       <StyledForm>
-<StyledInput placeholder=""/>
-<StyledButton></StyledButton>
+        <StyledInput placeholder="Username"/>
+         <StyledInput placeholder="Password"/>
+        <StyledButton>Login</StyledButton>
+        
       </StyledForm>
+</FormContainer>
     </LoginContainer>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
