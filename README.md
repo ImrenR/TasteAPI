@@ -1,16 +1,87 @@
-# React + Vite
+# TASTEAPI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**TASTEAPI** is a modern recipe web application built with **Vite + React**.  
+It allows users to **search for recipes**, **view detailed ingredients and instructions**, and explore new dishes powered by a public food API.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Features
 
-## React Compiler
+- **Search Recipes:** Find meals by name or ingredients.  
+- **Recipe Details:** View full ingredients and cooking instructions.  
+- **Navigation:** Built with React Router for seamless page transitions.  
+- **State Management:** Uses Context API and React Hooks for global state handling.  
+- **API Integration:** Fetches data dynamically using Axios.  
+- **Responsive UI:** Styled with modular CSS Modules and Styled Components for clean, modern layouts.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Category | Technologies |
+|-----------|---------------|
+| Frontend | React (Vite) |
+| Routing | React Router DOM |
+| State Management | Context API, React Hooks |
+| API Handling | Axios |
+| Styling | CSS Modules Styled Components |
+| Deployment | GitHub Pages |
+
+---
+
+##  Project Structure
+```
+src/
+│
+├── assets/ 
+├── components/ 
+│ ├── footer/
+│ ├── header/
+│ └── navbar/
+│
+├── context/
+│ └── RecipeProvider.jsx 
+│
+├── pages/ 
+│ ├── about/
+│ ├── details/
+│ ├── errorPage/
+│ ├── home/
+│ └── login/
+│
+├── router/
+│ ├── AppRouter.jsx
+│ └── PrivateRouter.jsx
+│
+└── App.jsx 
+```
+
+
+---
+
+## Installation & Setup
+
+1. **Clone the repository**
+
+   git clone https://github.com/ImrenR/TASTEAPI.git
+   cd TASTEAPI
+
+   npm install 
+
+   npm run dev
+
+## Learnings
+
+- This project helped me practice:
+- React Router and nested routes
+- Context API for global state
+- Axios API integration
+- Modular React architecture
+- Component reusability and clean structure
+- Styling with CSS Modules and Styled Components
+
+##  License
+
+This project is licensed under the MIT License
+
+Feel free to use and modify it for your own projects, just include attribution.
