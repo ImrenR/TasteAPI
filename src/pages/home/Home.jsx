@@ -1,3 +1,4 @@
+import Header from "../../components/header/Header"
 import { Cards, MainContainer, RecipeButton, RecipeHeader, RecipeImage } from "./HomeStyles"
 
 const Home = () => {
@@ -5,6 +6,7 @@ const Home = () => {
 <MainContainer>
 
 <Cards>
+
 <RecipeHeader>Food App</RecipeHeader>
 <RecipeImage src=""/>
 <RecipeButton>Search</RecipeButton>
