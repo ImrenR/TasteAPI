@@ -72,7 +72,7 @@ src/
 
 ## Learnings
 
-- This project helped me practice:
+**This project helped me practice:**
 - React Router and nested routes
 - Context API for global state
 - Axios API integration
