@@ -1,7 +1,7 @@
 import { createContext} from "react"
 
 
-export const {RecipeContext}=createContext();
+export const RecipeContext=createContext();
 
 const RecipeProvider = ({children}) => {
 

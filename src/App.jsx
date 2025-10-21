@@ -1,14 +1,14 @@
 
 import './App.css'
-import { RecipeContext } from './context/RecipeProvider'
+import RecipeProvider from './context/RecipeProvider'
 import AppRouter from './router/AppRouter'
 
 function App() {
  
   return (
-    <RecipeContext>
+    <RecipeProvider>
      <AppRouter/>
-    </RecipeContext>
+    </RecipeProvider>
   )
 }
 
