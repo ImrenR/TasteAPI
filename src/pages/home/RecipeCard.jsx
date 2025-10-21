@@ -12,7 +12,7 @@ const RecipeCard = ({recipes}) => {
     <RecipeHeader>{recipe.strMeal} </RecipeHeader>
       <RecipeImage src={recipe.strMealThumb}/>
    <RecipeButton type="submit"
-   onClick={()=>Navigate("/details", {state:{recipe}})}>Details</RecipeButton>
+   onClick={()=>navigate("/details", {state:{recipe}})}>Details</RecipeButton>
    
    
   </Cards>
