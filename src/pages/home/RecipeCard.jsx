@@ -1,5 +1,9 @@
 const RecipeCard = () => {
-  return <div>RecipeCard</div>
+  return(
+
+    <>
+    </>
+  )
 }
 
 export default RecipeCard
