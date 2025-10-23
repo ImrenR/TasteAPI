@@ -29,8 +29,7 @@ export const Menu = styled.div`
     /* uzun yazı olurda taşarsa gizle (hamburgere dönüşünce)*/
     flex-direction: column;
 
-  
-    
+
 
     width: 100%;
   }
