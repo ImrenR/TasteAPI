@@ -11,7 +11,7 @@ const RecipeProvider = ({ children }) => {
 
   const [query, setQuery] = useState("");
   const [recipes, setRecipes] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
   const URL = `https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`;
@@ -30,7 +30,7 @@ const RecipeProvider = ({ children }) => {
   if(error){
     return <p>Something went wrong</p>
   };
-  
+
   if(loading){
 return <p>Loading...</p>
   };
