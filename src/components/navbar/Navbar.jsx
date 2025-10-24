@@ -1,12 +1,21 @@
 import React from 'react'
-import { Logo, Menu, MenuLink, Nav } from './NavbarStyles'
+import { Hamburger, Logo, Menu, MenuLink, Nav } from './NavbarStyles'
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 const Navbar = () => {
   return (
 <Nav>
+  <Logo>
+    MyRecipes
+  </Logo>
+  <Hamburger>
+    <GiHamburgerMenu/>
+  </Hamburger>
  <Menu>
-  <Logo/>
-  <MenuLink/>
+  
+  <MenuLink to="/about">ABOUT</MenuLink>
+  <a href="https://github.com/ImrenR" target='blank'>GITHUB</a>
+   <MenuLink to="/about">LOGOUT</MenuLink>
   </Menu> 
 </Nav>
   )

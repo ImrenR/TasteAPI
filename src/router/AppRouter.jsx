@@ -5,10 +5,12 @@ import Home from "../pages/home/Home";
 import PrivateRouter from "./PrivateRouter";
 import Details from "../pages/details/Details";
 import NotFound from "../pages/errorPage/NotFound";
+import Navbar from "../components/navbar/Navbar";
 
 const AppRouter = () => {
   return (
     <>
+    <Navbar/>
       <Routes>
         <Route path="/" element={<Login/>} />
         <Route path="/about" element={<About />} />

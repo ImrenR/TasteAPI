@@ -30,10 +30,7 @@ export const Menu = styled.div`
     flex-direction: column;
 
   
-    display: ${({ ackapa }) => (ackapa === true ? "flex" : "none")};
-
-    width: 100%;
-  }
+    
 
   a {
     padding: 1rem 2rem;
