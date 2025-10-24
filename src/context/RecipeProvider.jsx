@@ -27,6 +27,16 @@ const RecipeProvider = ({ children }) => {
     }
   };
 
+  if(error){
+    return <p>Something went wrong</p>
+  };
+  
+  if(loading){
+return <p>Loading...</p>
+  };
+
+  
+
   return (
     <RecipeContext.Provider
       value={{
