@@ -1,8 +1,18 @@
-import React from 'react'
+import { createContext } from "react-router-dom"
 
-const RecipeProvider = () => {
+
+
+export const RecipeContext = createContext()
+
+const RecipeProvider = ({children}) => {
+
+
   return (
-    <div>RecipeProvider</div>
+    <RecipeContext.Provider value={{}}>
+
+     {children}
+
+    </RecipeContext.Provider>
   )
 }
 
