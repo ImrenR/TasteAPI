@@ -21,7 +21,8 @@ const Details = () => {
       </HeaderContainer>
 
       <DetailPart>
- <ImgContainer src={recipe.strMealThumb} width="480px">
+ <ImgContainer>
+ <img src={recipe.strMealThumb}  width="400px" />
  </ImgContainer>
    
 
