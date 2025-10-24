@@ -1,8 +1,14 @@
 import React from 'react'
+import { Logo, Menu, MenuLink, Nav } from './NavbarStyles'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+<Nav>
+ <Menu>
+  <Logo/>
+  <MenuLink/>
+  </Menu> 
+</Nav>
   )
 }
 
