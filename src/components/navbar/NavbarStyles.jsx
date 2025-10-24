@@ -29,8 +29,8 @@ export const Menu = styled.div`
     /* uzun yazı olurda taşarsa gizle (hamburgere dönüşünce)*/
     flex-direction: column;
 
-  
-    
+   
+    display: ${({ackapa})=> ackapa === true ? "flex" : "none"}
 
   a {
     padding: 1rem 2rem;

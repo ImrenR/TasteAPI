@@ -1,17 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Hamburger, Logo, Menu, MenuLink, Nav } from './NavbarStyles'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false)
   return (
 <Nav>
   <Logo>
     MyRecipes
   </Logo>
-  <Hamburger>
+  <Hamburger onClick={()=>setOpen(!open)}>
     <GiHamburgerMenu/>
   </Hamburger>
- <Menu>
+ <Menu ackapa={open}>
   
   <MenuLink to="/about">ABOUT</MenuLink>
   <a href="https://github.com/ImrenR" target='blank'>GITHUB</a>
