@@ -7,8 +7,8 @@ function App() {
 return (
 
   <RecipeProvider>
-    
-  </RecipeContext.Provider>
+    <AppRouter/>
+  </RecipeProvider>
 )
 
 }
