@@ -11,18 +11,34 @@ const RecipeProvider = ({ children }) => {
 
   const [query, setQuery] = useState("");
   const [recipes, setRecipes] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   const URL = `https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`;
 
   const getData = async () => {
-    const { data } = await axios(URL);
-    setRecipes(data.meals);
+    try {
+      setLoading(true);
+      const { data } = await axios(URL);
+      setRecipes(data.meals);
+      setLoading(false);
+    } catch (error) {
+      setError(true);
+    }
   };
-
 
   return (
     <RecipeContext.Provider
-      value={{ username, setUsername, password, setPassword, query, setQuery, getData, recipes}}
+      value={{
+        username,
+        setUsername,
+        password,
+        setPassword,
+        query,
+        setQuery,
+        getData,
+        recipes,
+      }}
     >
       {children}
     </RecipeContext.Provider>
