@@ -1,19 +1,8 @@
-import { createContext } from "react-router-dom"
 
 
 
-export const RecipeContext = createContext()
-
-const RecipeProvider = ({children}) => {
-
-
-  return (
-    <RecipeContext.Provider value={{}}>
-
-     {children}
-
-    </RecipeContext.Provider>
-  )
+const RecipeProvider = () => {
+  return <div>RecipeProvider</div>
 }
 
 export default RecipeProvider

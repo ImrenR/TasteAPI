@@ -6,9 +6,9 @@ function App() {
 
 return (
 
-  <RecipeProvider>
+  <>
     <AppRouter/>
-  </RecipeProvider>
+  </>
 )
 
 }
