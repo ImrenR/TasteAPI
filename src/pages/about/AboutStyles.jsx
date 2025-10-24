@@ -34,6 +34,6 @@ export const InfoContainer = styled.div`
   padding: 25px;
   border-radius: 5px;
   a {
-    color: orange;
+    color: green;
   }
 `;

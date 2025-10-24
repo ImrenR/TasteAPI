@@ -24,7 +24,7 @@ getData()
     <HeaderContainer>
       <MainHeader>Food App</MainHeader>
       <FormContainer onSubmit={handleSubmit}>
-        <FoodInput placeholder="search" 
+        <FoodInput placeholder="search your food" 
         onChange={(e)=>setQuery(e.target.value)}/>
 
         <Button>Search</Button>

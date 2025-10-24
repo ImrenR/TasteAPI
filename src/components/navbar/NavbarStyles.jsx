@@ -9,7 +9,7 @@ export const Nav = styled.div`
   align-items: center; // dikeyde ortala
   flex-wrap: wrap;
   /* Varsayılan olarak esnek öğeler tek bir satıra sığmaya çalışırlar. Gerektiğinde birden fazla satıra yaymak için bu özelliği kullanabilirsiniz */
-  background: #ae908d;
+  background: #d2c445ff;
   border-radius: 0 0 10px 10px;
   height: 75px;
   font-size: 2rem;
@@ -59,14 +59,14 @@ export const Menu = styled.div`
 
 export const MenuLink = styled(Link)`
   /* navbardaki 3 kelime ... tek tek about vs yazanların özellikleri YEŞİL*/
-  background-color: green;
+  
 
   padding: 1rem 2rem;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   /* kelimelerin altı çizili olmasın */
-  color: #02475e;
+  color: #b4bd85ff;
 
   transition: all 0.3s ease-in;
   font-size: 2rem;
@@ -78,14 +78,13 @@ export const MenuLink = styled(Link)`
   @media (max-width: 768px) {
     /* hamburger meydana çıktığında sonrasında tıklanınca linklerde
     /* ekran küçülünce alttaki stiller olsun */
-    border: 1px solid #00adb5;
-    border-radius: 10px;
+
     width: 91%;
   }
 `;
 
 export const Logo = styled(MenuLink)`
-  background-color: gray;
+
 
   padding: 1rem 0;
   color: #393e46;
