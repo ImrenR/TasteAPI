@@ -27,7 +27,7 @@ const handleSubmit=(e)=> {
   return (
     <LoginContainer>
       <FormContainer onSubmit={handleSubmit}>
-        <StyledImg src="" />
+        <StyledImg />
         <Header>{"<MY/>"}RECIPE PAGE</Header>
         <StyledForm>
           <StyledInput placeholder="Username" 

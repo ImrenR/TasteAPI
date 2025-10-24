@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { Navigate, Outlet } from 'react-router-dom'
+import { RecipeContext } from '../context/RecipeProvider'
 
 const PrivateRouter = () => {
 
