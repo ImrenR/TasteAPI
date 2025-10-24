@@ -1,16 +1,80 @@
-# React + Vite
+# 🍽️ TASTEAPI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based recipe search application that allows users to find meals using [TheMealDB API](https://www.themealdb.com/api.php).  
+This project demonstrates how to use **Context API**, **Private Routing**, and **Axios** to create a smooth, real-world recipe browsing experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Features
 
-## React Compiler
+-  **Login Authentication** (simple credential check)
+- **Recipe Search** powered by TheMealDB API
+- **Global State Management** using Context API
+- **Private Routing** with React Router DOM
+- **Loading & Error Handling**
+- **Automatic Redirect** from 404 Page
+- **Clean Component-Based Architecture**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Project Structure
+```
+TASTEAPI/
+│
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── footer/
+│   │   ├── header/
+│   │   ├── navbar/
+│   ├── context/
+│   │   └── RecipeProvider.jsx
+│   ├── pages/
+│   │   ├── about/
+│   │   ├── details/
+│   │   ├── errorPage/
+│   │   ├── home/
+│   │   └── login/
+│   ├── router/
+│   │   ├── AppRouter.jsx
+│   │   └── PrivateRouter.jsx
+│   ├── App.css
+│   └── App.jsx
+│
+└── package.json
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Authentication
+username : imren
+password: 1234
+
+## API reference
+
+BASE URL : https://www.themealdb.com/api/json/v1/1/search.php?s=${query}
+
+
+## Not Found page
+
+**When a user visits a non-existent route:**
+
+- Displays a message: “Oops!... Something went wrong”
+
+- A countdown timer (5 seconds)
+
+- Redirects automatically to the /home page.
+
+
+## Technology Used:
+
+- React.js
+
+- Context API
+
+- React Router DOM
+
+- Axios
+
+- CSS Modules
+
+- Styled Components
