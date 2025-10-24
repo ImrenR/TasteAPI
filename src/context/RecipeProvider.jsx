@@ -28,11 +28,11 @@ const RecipeProvider = ({ children }) => {
   };
 
   if(error){
-    return <p>Something went wrong</p>
+    return <img src="https://t4.ftcdn.net/jpg/04/25/04/31/360_F_425043151_fEW5PV5rZ5MX9LxcQd3sewzetmoooIpJ.jpg" style={{width: "100vh"}}/>
   };
 
   if(loading){
-return <p>Loading...</p>
+return <img src="https://d37oebn0w9ir6a.cloudfront.net/account_6827/customerio-loading-animation_244ab356f603e104472b77ceb1e5add4.gif"/>
   };
 
   
