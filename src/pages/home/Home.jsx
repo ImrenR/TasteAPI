@@ -1,3 +1,5 @@
+import Header from "../../components/header/Header";
+import RecipeCard from "./RecipeCard";
 
 
 const Home = () => {
@@ -5,7 +7,9 @@ const Home = () => {
 
   return (
     <div>
-home
+<Header/>
+
+
     </div>
   );
 };
