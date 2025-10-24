@@ -15,36 +15,32 @@ export const DetailContainer = styled.div`
 
 export const DetailPart = styled.div`
   /* verilerin , içindekiler,resim ve Nutrients in yazdığı yer */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start; /* keeps top-aligned cards */
+  gap: 2rem; /* space between image & text */
   margin: 1rem;
-  border: 1px solid white;
-  border-radius: 5px;
+  padding: 2rem;
+  border-radius: 10px;
   background-color: pink;
-  /* background-color: #e1f1dd; */
-  /* height: calc(100vh - 300px); */
-  @media (max-width: 1250px) {
-    justify-content: center;
-
-    border: 1px solid red;
+  border: 1px solid white;
   }
 `;
 
 export const ImgContainer = styled.div`
   /* resmin div i */
-  background-color: green;  
-  border: 1px solid #00adb5;
-  padding: 10px;
-  border-radius: 3px;
-  margin: 2rem;
+  background-color: #fff;
+  border: 2px solid #00adb5;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   img {
+    max-width: 100%;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 `;
 
@@ -77,12 +73,13 @@ export const OtherPart = styled.div`
   /* üstteki bilgiler */
   background-color: lightgray;
 
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 1.5rem;
   width: 400px;
-  text-align: right;
-  font-size: 1.8rem;
-  margin: 2rem;
+  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  /* span{display:block; margin :1rem} */
+  gap: 0.8rem;
+  text-align: left;
 `;

@@ -16,13 +16,16 @@ const Details = () => {
   return (
     <DetailContainer>
       <HeaderContainer>
+        <h1>{recipe.strMeal}</h1>
         <img src={diet} alt="" />
       </HeaderContainer>
 
       <DetailPart>
+ <ImgContainer src={recipe.strMealThumb} width="480px">
+ </ImgContainer>
+   
+
         <OtherPart>
-          
-          <span> {recipe.strMeal}</span>
           <h2>Ingredients</h2>
           <span>{recipe.strIngredient1}</span>
           <span>{recipe.strIngredient2}</span>
@@ -30,8 +33,8 @@ const Details = () => {
           <span>{recipe.strIngredient4}</span>
           <span>{recipe.strIngredient5}</span>
           <span>{recipe.Instructions}</span>
-        </OtherPart>
-        <ImgContainer src={recipe.strMealThumb} width="480px" />
+ </OtherPart>
+       
       </DetailPart>
     </DetailContainer>
   );
