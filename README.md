@@ -1,4 +1,7 @@
-# 🍽️ TASTEAPI
+# TasteAPI
+
+This project has been deployed on Vercel: [https://taste-api.vercel.app](https://taste-api.vercel.app)
+
 
 A React-based recipe search application that allows users to find meals using [TheMealDB API](https://www.themealdb.com/api.php).  
 This project demonstrates how to use **Context API**, **Private Routing**, and **Axios** to create a smooth, real-world recipe browsing experience.
